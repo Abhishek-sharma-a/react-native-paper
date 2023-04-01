@@ -69,6 +69,7 @@ const Tooltip = ({
   leaveTouchDelay = 1500,
   title,
   theme: themeOverrides,
+  titleMaxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -187,6 +188,7 @@ const Tooltip = ({
               selectable={false}
               variant="labelLarge"
               style={{ color: theme.colors.surface }}
+              maxFontSizeMultiplier={titleMaxFontSizeMultiplier}
             >
               {title}
             </Text>

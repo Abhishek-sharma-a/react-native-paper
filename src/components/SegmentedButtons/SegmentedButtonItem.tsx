@@ -102,6 +102,7 @@ const SegmentedButtonItem = ({
   segment,
   density = 'regular',
   theme: themeOverrides,
+  labelMaxFontSizeMultiplier,
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
 
@@ -214,6 +215,7 @@ const SegmentedButtonItem = ({
             style={[styles.label, labelTextStyle]}
             selectable={false}
             numberOfLines={1}
+            maxFontSizeMultiplier={labelMaxFontSizeMultiplier}
           >
             {label}
           </Text>

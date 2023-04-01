@@ -185,6 +185,7 @@ const Button = ({
   labelStyle,
   testID = 'button',
   accessible,
+  maxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -366,6 +367,7 @@ const Button = ({
               textStyle,
               labelStyle,
             ]}
+            maxFontSizeMultiplier={maxFontSizeMultiplier}
           >
             {children}
           </Text>

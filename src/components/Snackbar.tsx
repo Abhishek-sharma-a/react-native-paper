@@ -143,6 +143,7 @@ const Snackbar = ({
   wrapperStyle,
   style,
   theme: themeOverrides,
+  maxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -245,6 +246,7 @@ const Snackbar = ({
         <Text
           variant="bodyMedium"
           style={[styles.content, { color: textColor }]}
+          maxFontSizeMultiplier={maxFontSizeMultiplier}
         >
           {children}
         </Text>

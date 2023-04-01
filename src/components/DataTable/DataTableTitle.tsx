@@ -94,6 +94,7 @@ const DataTableTitle = ({
   style,
   theme: themeOverrides,
   numberOfLines = 1,
+  maxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -151,6 +152,7 @@ const DataTableTitle = ({
             textStyle,
           ]}
           numberOfLines={numberOfLines}
+          maxFontSizeMultiplier={maxFontSizeMultiplier}
         >
           {children}
         </Text>

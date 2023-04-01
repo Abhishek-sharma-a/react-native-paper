@@ -137,6 +137,7 @@ const Banner = ({
   theme: themeOverrides,
   onShowAnimationFinished = () => {},
   onHideAnimationFinished = () => {},
+  maxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -240,6 +241,7 @@ const Banner = ({
               ]}
               accessibilityLiveRegion={visible ? 'polite' : 'none'}
               accessibilityRole="alert"
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
             >
               {children}
             </Text>

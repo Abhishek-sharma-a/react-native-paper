@@ -104,6 +104,7 @@ const DrawerCollapsedItem = ({
   accessibilityLabel,
   badge = false,
   testID = 'drawer-collapsed-item',
+  labelMaxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -224,6 +225,7 @@ const DrawerCollapsedItem = ({
               numberOfLines={2}
               onTextLayout={onTextLayout}
               style={[styles.label, androidLetterSpacingStyle, labelTextStyle]}
+              maxFontSizeMultiplier={labelMaxFontSizeMultiplier}
             >
               {label}
             </Text>

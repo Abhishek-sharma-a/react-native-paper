@@ -69,6 +69,7 @@ const AvatarText = ({
   labelStyle,
   color: customColor,
   theme: themeOverrides,
+  maxFontSizeMultiplier,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
@@ -104,6 +105,7 @@ const AvatarText = ({
           labelStyle,
         ]}
         numberOfLines={1}
+        maxFontSizeMultiplier={maxFontSizeMultiplier}
       >
         {label}
       </Text>
